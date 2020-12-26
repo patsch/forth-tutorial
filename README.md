@@ -13,4 +13,4 @@ Forths key data type is a **stack**, in other contexts also called a **LIFO** (L
 
 You end up with a **stack** of plates, and any new plate always goes on top - that's the basic mechanism of a stack. You can either **push** a new element (plate) on top, or **pop** the topmost element off it - that's it ! Very simple, hence very fast, and very efficient for certain types of problems.
 
-![Stack of Plates](https://www.dropbox.com/s/ytezt1ul3lmkmcy/stack_of_plates.png?dl=1)
+![Stack of Plates](https://github.com/patsch/forth-tutorial/blob/main/stack_of_plates.png)
