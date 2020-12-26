@@ -77,8 +77,6 @@ Retcode dictLookupCommand(char *word, Entry **returnedEntry) {
             
             // set the return pointer to the entry we found so the caller can work with it
             *returnedEntry = entry;
-            // run the code associated with the keyword in our dictionary - this will now call one of the dictionary defined functions above
-            // entry->code();
         }
         entry = entry->next_entry;
     }

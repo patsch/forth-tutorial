@@ -98,3 +98,36 @@ int main(int argc, char * argv[])
     // free up the memory you allocated (at least some of it...)
 }
 
+char *errorStringFor(Retcode ret)
+{
+    char *sret = NULL;
+    switch (ret)
+    {
+        case OK:
+        {
+            sret = "OK";
+            break;
+        }
+        case ERR_STACK_EMPTY:
+        {
+            sret = "Stack is empty";
+            break;
+        }
+        case ERR_UNKNOWN_COMMAND:
+        {
+            sret = "Unknown command";
+            break;
+        }
+        case ERR_NOT_YET_IMPLEMENTED:
+        {
+            sret = "Command not yet implemented";
+            break;
+        }
+        default:
+        {
+            sret = "Unknown/Unmapped return code (see errorStringFor() in main.c)";
+            break;
+        }
+    }
+    return sret;
+}

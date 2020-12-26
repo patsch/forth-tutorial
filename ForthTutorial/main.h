@@ -38,6 +38,8 @@ typedef enum { false, true } bool;
 #endif
 
 
+extern char *errorStringFor(Retcode ret);
+
 extern int debug;
 
 #endif

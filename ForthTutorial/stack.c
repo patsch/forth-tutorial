@@ -1,6 +1,7 @@
 
 #include "stack.h"
 #include "dictionary.h"
+#include "main.h"
 
 // this module implements the basic functions of the forth stack, allowing you to push a value or command onto it, and to
 // pop a value from it
@@ -21,18 +22,20 @@ Retcode stackPush(char *word) {
     Entry *command;
     
     Retcode ret = dictLookupCommand(word, &command);
+    
     if (ret == OK)
     {
         // we successfully looked up a command - so now we execute it
         ret = command->code();
+        
+        if (ret != OK)
+        {
+            printf("ERR: Could not execute the '%s' operator. Error Code %d : '%s'\n",word,ret, errorStringFor(ret));
+        }
     }
     else
     {
-        if (ret == ERR_NOT_YET_IMPLEMENTED)
-        {
-            printf("\nERR: was asked to execute the '%s' command, but that command hasn't been implemented yet. Add the implementation in forth.c !\n",word);
-        }
-        else
+        if (ret == ERR_UNKNOWN_COMMAND)
         {
             // check if this is a number
             StackValue val;
@@ -49,6 +52,10 @@ Retcode stackPush(char *word) {
                 ret = stackPushValue(val);
             }
         }
+        if (ret != OK)
+        {
+            printf("ERR: Could not interpret '%s'. Error Code %d : '%s'\n",word,ret, errorStringFor(ret));
+        }
     }
     return ret;
 }
@@ -57,6 +64,11 @@ Retcode stackPushValue(StackValue val)
 {
     // push the number onto the stack
 
+    if (debug)
+    {
+        printf("stackPushValue %ld\n",val);
+    }
+    
     // allocate space for a new stack element
     StackElement *newStackElement = malloc(sizeof(StackElement)*sizeof(char));
     // initialise with the parameter
