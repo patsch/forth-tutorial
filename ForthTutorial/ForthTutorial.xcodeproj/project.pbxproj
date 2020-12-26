@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		64A8E96425970694001F4FA3 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 64A8E96325970694001F4FA3 /* main.c */; };
+		64A8E97325970710001F4FA3 /* dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 64A8E96B25970710001F4FA3 /* dictionary.c */; };
+		64A8E97425970710001F4FA3 /* forth.c in Sources */ = {isa = PBXBuildFile; fileRef = 64A8E96D25970710001F4FA3 /* forth.c */; };
+		64A8E97525970710001F4FA3 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 64A8E97025970710001F4FA3 /* stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,13 @@
 /* Begin PBXFileReference section */
 		64A8E96025970694001F4FA3 /* ForthTutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ForthTutorial; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A8E96325970694001F4FA3 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		64A8E96B25970710001F4FA3 /* dictionary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dictionary.c; sourceTree = "<group>"; };
+		64A8E96C25970710001F4FA3 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		64A8E96D25970710001F4FA3 /* forth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = forth.c; sourceTree = "<group>"; };
+		64A8E96E25970710001F4FA3 /* dictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		64A8E96F25970710001F4FA3 /* forth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forth.h; sourceTree = "<group>"; };
+		64A8E97025970710001F4FA3 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		64A8E97925971F2F001F4FA3 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,13 @@
 		64A8E96225970694001F4FA3 /* ForthTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				64A8E97925971F2F001F4FA3 /* main.h */,
+				64A8E96B25970710001F4FA3 /* dictionary.c */,
+				64A8E96E25970710001F4FA3 /* dictionary.h */,
+				64A8E96D25970710001F4FA3 /* forth.c */,
+				64A8E96F25970710001F4FA3 /* forth.h */,
+				64A8E97025970710001F4FA3 /* stack.c */,
+				64A8E96C25970710001F4FA3 /* stack.h */,
 				64A8E96325970694001F4FA3 /* main.c */,
 			);
 			path = ForthTutorial;
@@ -118,7 +135,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64A8E97425970710001F4FA3 /* forth.c in Sources */,
 				64A8E96425970694001F4FA3 /* main.c in Sources */,
+				64A8E97525970710001F4FA3 /* stack.c in Sources */,
+				64A8E97325970710001F4FA3 /* dictionary.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

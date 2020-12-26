@@ -2,7 +2,7 @@
 #ifndef __DICTIONARY_INCLUDED__
 #define __DICTIONARY_INCLUDED__
 
-#include "mini_forth.h"
+#include "main.h"
 
 // Entry: this is the structure that holds one dictionary entry. the dictionary is used to define what 'operations' forth understands - in this
 // very simple example, it will be only the 4 basic arithmetic operations, +,-,* and / as well as 'dup' (to duplicate the top stack element) and 'pop' to remove the top stack element

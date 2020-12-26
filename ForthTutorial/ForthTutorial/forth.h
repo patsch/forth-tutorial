@@ -10,7 +10,7 @@
 #ifndef __FORTH_INCLUDED__
 #define __FORTH_INCLUDED__
 
-#include "mini_forth.h"
+#include "main.h"
 
 // execute the 'add' function on the top two stack entries
 extern Retcode add(void);

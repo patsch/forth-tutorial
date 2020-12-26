@@ -3,7 +3,7 @@
 #ifndef __STACK_INCLUDED__
 #define __STACK_INCLUDED__
 
-#include "mini_forth.h"
+#include "main.h"
 
 typedef long int StackValue;    // the type of data you can push onto the stack (we just use long integer numbers)
 
@@ -22,7 +22,7 @@ typedef struct StackElement
 typedef StackElement *RefStackElement;
 
 // the stack variable
-// the 'extern' declaration allows other .c modules to import this mini_forth.h header file and refer to the 'stack'
+// the 'extern' declaration allows other .c modules to import this main.h header file and refer to the 'stack'
 // global variable, even though it is actually defined only in main.c
 extern StackElement *stack;
 

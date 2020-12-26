@@ -1,6 +1,6 @@
 
 
-#include "mini_forth.h"
+#include "main.h"
 #include "dictionary.h"
 #include "forth.h"
 

@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "mini_forth.h"
+#include "main.h"
 #include "dictionary.h"
 #include "stack.h"
 
@@ -81,14 +81,14 @@ int main(int argc, char * argv[])
         
 
     // show the stack at the end in debug mode
-    if (debug)
+    if (1)
     {
-        printf("\n\nResulting Stack at the end:");
+        printf("\n\nResulting Stack at the end:\n");
         StackElement *top = stack;
         int pos = 0;
         while (top)
         {
-            printf("[%d] <%ld>",pos,top->value);
+            printf("[%d] <%ld>\n",pos,top->value);
             top = top->next;
             pos++;
         }
