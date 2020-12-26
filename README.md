@@ -29,7 +29,7 @@ A dictionary, sometimes also called a **Hash**, is a very versatile collection d
 
 In fact, a **Dictionary** can be thought of as a generalised version of an **Array**. An array allows you to look up an element by it's index (offset) - a positive integer number starting from 0.
 
-A **dictionary** also allows you to look up an element - but your totally free on what you want to use to perform the lookup. In many cases, a **String** is used, which allows you ask a dictionary to .... **give me the element you have for the lookup string 'add'**.
+A **dictionary** also allows you to look up an element - but you're totally free on what you want to use to perform the lookup. In many cases, a **String** is used, which allows you ask a dictionary to .... **give me the element you have for the lookup string 'add'**.
 
 We are using a dictionary in this tutorial to look up details of the available **operations** given the keyword for the operation, i.e. **+** for addition.
 
