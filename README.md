@@ -29,13 +29,20 @@ A dictionary, sometimes also called a **Hash**, is a very versatile collection d
 
 In fact, a **Dictionary** can be thought of as a generalised version of an **Array**. An array allows you to look up an element by it's index (offset) - a positive integer number starting from 0.
 
-A **dictionary** also allows you to look up an element - but your totally free on what you want to use to perform the lookup. In many cases, a **String** is used, which allows you ask a dictionary to .... **give me the element you have for the lookup string 'add'**.
+A **dictionary** also allows you to look up an element - but you're totally free on what you want to use to perform the lookup. In many cases, a **String** is used, which allows you ask a dictionary to .... **give me the element you have for the lookup string 'add'**.
 
 We are using a dictionary in this tutorial to look up details of the available **operations** given the keyword for the operation, i.e. **+** for addition.
 
 ## Implementation
 
-The Forth tutorial except all stack elements to be presented on the command line - you can easily change that in the code so that instead stack elements can be typed in interactively.
+When you run this tutorial, you can either provide a set of stack elements on the command line - or provide no parameters and go straight into interactive mode.
+
+Any parameters on the command line are processed first and any output, i.e. if you use the **.** command to print the topmost element on the stack, will be shown. After processing any command line parameters the program enters interactive mode and you will see a prompt like this:
+
+
+[3] >> 
+
+The [3] indicates that your stack currently contains 3 elements. You can use the *...* command to print the complete stack without changing it, or use *.* to print and remove the topmost element.
 
 To start with, we initialize the **commandDictionary** with the available commands. The **commandDictionary** is internally also implemented as a stack, and the **dictionary** functionality is provided via some helper functions like dictLookup, dictAdd and dictInit. 
 
