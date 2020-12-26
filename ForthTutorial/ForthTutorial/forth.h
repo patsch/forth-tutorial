@@ -37,6 +37,9 @@ extern Retcode pop(void);
 // execute the 'print_pop' function (print then remove the topmost element)
 extern Retcode print_pop(void);
 
+// print all
+extern Retcode print_all(void);
+
 // a simple 'help' method to display the available commands and usage
 extern Retcode forth_help(void);
 

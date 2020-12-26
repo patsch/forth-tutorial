@@ -42,6 +42,9 @@ Retcode dictInit() {
     // add the 'print' (print out the topmost element of the stack then remove it
     dictAddCommand(".","Print : Remove the topmost element from the stack (pop), then print it.",COMMAND_PRINT,print_pop);
 
+    // add the 'print all' (print out the topmost element of the stack then remove it
+    dictAddCommand("...","Print Stack : Print the complete stack to the screen without changing it.",COMMAND_PRINT_ALL,print_all);
+
     dictAddCommand("help","Help: Print out the available forth commands",COMMAND_HELP,forth_help);
 
     dictAddCommand("bye","Bye: Quit processing and exit to the shell.",COMMAND_BYE,forth_bye);

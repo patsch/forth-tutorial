@@ -8,10 +8,10 @@
 // very simple example, it will be only the 4 basic arithmetic operations, +,-,* and / as well as 'dup' (to duplicate the top stack element) and 'pop' to remove the top stack element
 
 
-// an enum for the commands our forth interpreter supports
+// an enum for the commands our forth interpreter supports (currently not really used!)
 typedef enum
 {
-    COMMAND_PLUS, COMMAND_MINUS, COMMAND_MULTIPLY, COMMAND_DIVIDE, COMMAND_MODULO, COMMAND_DUPLICATE, COMMAND_BYE, COMMAND_POP, COMMAND_PRINT,COMMAND_HELP
+    COMMAND_PLUS, COMMAND_MINUS, COMMAND_MULTIPLY, COMMAND_DIVIDE, COMMAND_MODULO, COMMAND_DUPLICATE, COMMAND_BYE, COMMAND_POP, COMMAND_PRINT,COMMAND_PRINT_ALL,COMMAND_HELP
 } ForthCommand;
 
 

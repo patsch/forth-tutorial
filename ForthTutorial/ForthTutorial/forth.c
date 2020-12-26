@@ -114,6 +114,28 @@ Retcode print_pop() {
     return ret;
 }
 
+
+Retcode print_all() {
+    Retcode ret = OK;
+    StackElement *top = stack;
+    if (!top)
+    {
+        printf("\nStack is empty.\n");
+    }
+    else
+    {
+        printf("\nStack Contents:\n");
+        int pos = 0;
+        while (top)
+        {
+            printf("[%d] <<< %ld >>>\n",pos,top->value);
+            top = top->next;
+            pos++;
+        }
+    }
+    return ret;
+}
+
 // implement a simple help function which can be called on the command line or interactively
 Retcode forth_help() {
     printf("\n\n---------------------------------------------------------\n");
