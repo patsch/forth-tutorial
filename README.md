@@ -5,6 +5,41 @@ A miniature implementation of Forth in C and an introduction to stack and dictio
 
 This projects implements the beginning of a stack based programming language like **Forth** using **C** - it serves as a starting point for a more full blown Forth implementation and was created to illustrate some key concepts of Forth and the **Stack** and **Dictionary** data type.
 
+## Prerequisites
+
+
+### Using the Command Line
+
+You should be able to run this code on pretty much any environment that has an ANSI C Compiler. If you prefer to work on the Terminal (Console), simply
+enter the **ForthTutorial** directory, then run
+
+`make`
+
+That should compile they key files...
+
+`dictionary.c` : Implements the dictionary of available Forth operators/commands.
+`forth.c`      : Implements the functionality behind the commands define in the command dictionary module.
+`stack.c`      : Implements a basic stack, the key data structure used in Forth.
+`main.c`       : Implements the **main** function, the main entry point for any **C** program, and the processing of command line parameters and interactive input.
+
+...into the executable `mini_forth` which you can then execute via `./mini_forth`
+
+To get a list of available commands, run `./mini_forth help`
+
+The `Makefile` defines the compiler to use - by default that is `gcc`
+
+If you don't have `gcc` on your computer, see [Installing GCC](https://gcc.gnu.org/install/).
+
+On a Mac, you can install `gcc` via [Homebrew](https://brew.sh) - after you installed `brew`, run `brew install gcc`
+
+### Using XCode
+
+The project also comes with an XCode project file to be used on a Mac. Simply open the `ForthTutorial.xcodeproj` file in XCode run select `Product` => `Run`:
+
+![XCode Screenshot](https://github.com/patsch/forth-tutorial/blob/main/xcode_screenshot.png)
+
+You can then interact with the Console provided within XCode (usually at the bottom right - see the screenshot above for illustration).
+
 ## Forth & Stacks
 
 Forth is often used to introduce key principles of a programming language to Computer Science students because its processing mechanism is both very simple and powerful.
@@ -57,4 +92,6 @@ If the command dictionary lookup fails, we check whether the given value is a pu
 Once the processing of the input value is completed, the program shows the resulting stack, then exits.
 
 
+Enjoy!
+patsch
 
