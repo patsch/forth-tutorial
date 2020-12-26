@@ -144,8 +144,8 @@ Retcode forth_help() {
     printf("If you provide the stack elements on the command line they will be processed first and the Forth interpreter will then\n");
     printf("enter interactive mode. In interactive mode, you can simply enter values / commands one by one; hit ENTER/RETURN after each\n");
     printf("value/command to push the value/command onto the stack and, if you push a command, perform the requested operation.\n\n");
-    printf("Usage:   miniforth word1 word2 word3 word4 ...\n");
-    printf("Example: miniforth 1 2 +\n");
+    printf("Usage:   mini_forth word1 word2 word3 word4 ...\n");
+    printf("Example: mini_forth 1 2 +\n");
     printf("\n\nHere is a list of all the operators this mini forth implementation understands:\n\n");
     
     Entry *entry = commandDictionary;

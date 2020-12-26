@@ -81,7 +81,7 @@ int main(int argc, char * argv[])
         
 
     // show the stack at the end in debug mode
-    if (1)
+    if (stackDepth() > 0)
     {
         printf("\n\nResulting Stack at the end:\n");
         StackElement *top = stack;
