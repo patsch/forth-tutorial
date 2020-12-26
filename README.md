@@ -18,9 +18,13 @@ enter the **ForthTutorial** directory, then run
 That should compile they key files...
 
 `dictionary.c` : Implements the dictionary of available Forth operators/commands.
+
 `forth.c`      : Implements the functionality behind the commands define in the command dictionary module.
+
 `stack.c`      : Implements a basic stack, the key data structure used in Forth.
+
 `main.c`       : Implements the **main** function, the main entry point for any **C** program, and the processing of command line parameters and interactive input.
+
 
 ...into the executable `mini_forth` which you can then execute via `./mini_forth`
 
