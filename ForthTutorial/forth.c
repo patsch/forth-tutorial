@@ -75,7 +75,7 @@ Retcode mult() {
         ret = stackPop(&val2);
         if (ret == OK)
         {
-            // if still ok, subtract the two values, then push the result
+            // if still ok, multiply the two values, then push the result
             StackValue result = val1 * val2;
             stackPushValue(result);
         }
